@@ -827,20 +827,36 @@ button {
 .modal-form-group {
   display: flex;
   flex-direction: column;
-
+  
   margin-bottom: 8px;
 }
 
-.form-label {
+.modal-form-group .form-label {
   margin-bottom: 4px;
 }
 
-.form-input,
-.form-textarea {
+.modal-form-group .form-input,
+.modal-form-group .form-textarea {
   padding: 8px 16px;
 
-  outline: 1px solid blue;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
 }
+
+.modal-form-group .form-input {
+  height: 40px;  
+}
+
+.modal-form-group .form-textarea {
+  height: 120px;
+  resize: none;
+
+  
+}
+
+
+
+
 
 
 
