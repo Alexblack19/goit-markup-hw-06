@@ -819,7 +819,15 @@ button {
 
 /** ========== Modal window form========== */
 
+.modal-form-title {
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
 
+.modal-form-group {
+  display: flex;
+  flex-direction: column;
+}
 
 
 
