@@ -819,7 +819,13 @@ button {
 
 /** ========== Modal window form========== */
 
-.modal-form {
+
+
+
+
+
+
+/* .modal-form {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -858,6 +864,7 @@ button {
 
 .modal-textarea {
   height: 120px;
+
   resize: none;
 }
 
@@ -865,7 +872,7 @@ button {
   padding: 16px 32px;
   width: 169px;
   height: 56px;
-}
+} */
 
 
 
