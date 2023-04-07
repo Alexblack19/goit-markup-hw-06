@@ -826,6 +826,7 @@ button {
 }
 
 .modal-form-title {
+  margin-top: 48px;
   margin-bottom: 16px;
 }
 
@@ -845,6 +846,7 @@ button {
 
 .modal-textarea {
   height: 120px;
+  resize: vertical;
 }
 
 .modal-submit-btn { 
