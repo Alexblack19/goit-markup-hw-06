@@ -773,6 +773,8 @@ button {
 
   width: 408px;
   min-height: 576px; 
+
+  padding: 24px 24px;  
   
   background-color: var(--modal-window-bgcl);
 
@@ -792,7 +794,7 @@ button {
   width: 24px;
   height: 24px;
   
-  padding: 0;
+  padding: 0;  
 
   color: var(--modal-button-icon-cl);
   background-color: var(--modal-button-bgcl);
@@ -814,4 +816,46 @@ button {
 
   fill: currentColor;
 }
+
+/** ========== Modal window form========== */
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.modal-form-title {
+  margin-bottom: 16px;
+}
+
+.modal-label {
+  margin-bottom: 4px;
+}
+
+.modal-input,
+.modal-textarea {
+  padding: 8px 16px;
+  margin-bottom: 8px;
+}
+
+.modal-input {
+  height: 40px;
+}
+
+.modal-textarea {
+  height: 120px;
+}
+
+.modal-submit-btn { 
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+}
+
+
+
+
+
+
 
