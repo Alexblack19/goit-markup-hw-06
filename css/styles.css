@@ -834,10 +834,22 @@ button {
   margin-bottom: 4px;
 }
 
-.modal-input,
-.modal-textarea {
+.modal-input {
   padding: 8px 16px;
   margin-bottom: 8px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+
+  border-radius: 4px;
+}
+
+.modal-textarea {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+
+  border-radius: 4px;
 }
 
 .modal-input {
