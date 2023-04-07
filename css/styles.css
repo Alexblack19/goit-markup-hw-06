@@ -846,7 +846,7 @@ button {
 
 .modal-textarea {
   height: 120px;
-  resize: vertical;
+  resize: none;
 }
 
 .modal-submit-btn { 
