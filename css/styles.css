@@ -827,23 +827,26 @@ button {
 .modal-form-group {
   display: flex;
   flex-direction: column;
+
+  margin-bottom: 8px;
 }
 
+.form-label {
+  margin-bottom: 4px;
+}
+
+.form-input,
+.form-textarea {
+  padding: 8px 16px;
+
+  outline: 1px solid blue;
+}
 
 
 
 
 /* .modal-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.modal-form-title {
-  margin-top: 48px;
-  margin-bottom: 16px;
-}
-
+  
 .modal-label {
   margin-bottom: 4px;
 }
