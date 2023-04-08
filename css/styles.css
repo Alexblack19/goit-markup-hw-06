@@ -828,15 +828,16 @@ button {
   display: flex;
   flex-direction: column;
   
+  /* margin-bottom: 8px; */
+}
+
+.modal-form-group:not(:last-child) {
   margin-bottom: 8px;
+
 }
 
-.modal-form-group:nth-child(4) {
-  margin-bottom: 16px;
-}
-
-.modal-form-group:nth-child(5) {
-  margin-bottom: 24px;
+.modal-form-group:last-child {
+  margin-bottom: 40px;
 }
 
 .form-label {
@@ -860,7 +861,12 @@ button {
   resize: none;  
 }
 
+.modal-submit-btn {  
+  width: 169px;
+  height: 56px;
 
+  padding: 16px 32px;
+}
 
 
 
