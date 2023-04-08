@@ -819,24 +819,24 @@ button {
 
 /** ========== Modal window form========== */
 
-.modal-form-title {
+.contact-form-paragraph {
   margin-top: 48px;
   margin-bottom: 16px;
-}
 
-.modal-form-group {
-  display: flex;
-  flex-direction: column;
   
-  /* margin-bottom: 8px; */
 }
 
-.modal-form-group:not(:last-child) {
+.contact-form-group {
+  display: flex;
+  flex-direction: column;  
+}
+
+.contact-form-group:not(:last-child) {
   margin-bottom: 8px;
 
 }
 
-.modal-form {
+.contact-form {
   margin-bottom: 16px;
 }
 
@@ -861,7 +861,18 @@ button {
   resize: none;  
 }
 
-.modal-submit-btn {  
+
+
+
+
+
+
+
+
+
+
+
+.contact-submit-btn {  
   width: 169px;
   height: 56px;
 
