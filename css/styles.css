@@ -836,8 +836,8 @@ button {
 
 }
 
-.modal-form-group:last-child {
-  margin-bottom: 40px;
+.modal-form {
+  margin-bottom: 16px;
 }
 
 .form-label {
