@@ -950,6 +950,10 @@ button {
 
 
 
+
+
+
+
 .modal-form-fake-checkbox {
   display: flex;
   justify-content: center;
@@ -966,6 +970,8 @@ button {
   border: 1px solid var(--form-checkbox-border-cl);
   border-radius: 2px;
   cursor: pointer;
+
+  transition: color 4250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 4250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 4250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-check {
@@ -975,9 +981,9 @@ button {
   fill: currentColor;
 
   opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 .modal-form-check:checked + .modal-form-fake-checkbox {
   background-color: var(--form-checkbox-accent-bgcl);
@@ -986,4 +992,8 @@ button {
 
 .modal-form-check:focus + .modal-form-fake-checkbox {
   border-color: var(--form-checkbox-accent-bgcl);
+}
+
+.modal-form-check:checked + .modal-form-fake-checkbox .icon-check {
+  opacity: 1;
 }
