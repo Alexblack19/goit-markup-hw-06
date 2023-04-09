@@ -578,7 +578,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button class="modal-close-btn" data-modal-close>
-          <svg aria-label="" class="icon-close-modal">
+          <svg class="icon-close-modal">
             <use href="./images/icons.svg#icon-close-modal"></use>
           </svg>
         </button>
@@ -644,16 +644,21 @@
             ></textarea>
           </label>
 
-          <label class="modal-form-check">
+          <label class="modal-form-check-group">
+            <span class="modal-form-check-desc">
+              I accept the terms and conditions of the
+              <a class="privacy-policy-link" href="#">Privacy Policy</a>
+            </span>
             <input
-              class="modal-form-check visually-hidden"
+              class="modal-form-check"
               type="checkbox"
-              name="user-policy"              
+              name="user-policy"
             />
-            <span class="modal-form-check-desc"
-              >I accept the terms and conditions of the
-              <a class="privacy-policy-link" href="#">Privacy Policy</a></span
-            >
+            <span class="modal-form-fake-checkbox">
+              <svg class="icon-check icon">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
           </label>
 
           <button class="modal-form-submit" type="submit">Send</button>

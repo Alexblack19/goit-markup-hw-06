@@ -72,6 +72,7 @@
   --form-comment-placeholder-txt-cl: rgba(46, 47, 66, 0.4);
   --form-checkbox-border-cl: rgba(46, 47, 66, 0.4);
   --form-checkbox-accent-bgcl: #404BBF;
+  --form-icon-fake-checkbox-fill: #F4F4FD;
 
   /** Portfolio cards overlay */
   --cards-overlay-bgcl: #4D5AE5;
@@ -942,20 +943,47 @@ button {
   color: var(--form-secondary-txt-cl);
 }
 
-.modal-form-check-desc::before {
-  content: "";
-  display: block;
+
+
+
+
+
+
+
+.modal-form-fake-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  /* display: block; */
 
   width: 16px;
   height: 16px;
+
+  color: var(--form-icon-fake-checkbox-fill);
 
   border: 1px solid var(--form-checkbox-border-cl);
   border-radius: 2px;
   cursor: pointer;
 }
 
+.icon-check {
+  width: 10px;
+  height: 8px;
+  
+  fill: currentColor;
 
-.modal-form-check:checked + .modal-form-check-desc::before {
+  opacity: 0;
+}
+
+
+
+.modal-form-check:checked + .modal-form-fake-checkbox {
   background-color: var(--form-checkbox-accent-bgcl);
   border-color: var(--form-checkbox-accent-bgcl);  
+}
+
+.modal-form-check:focus + .modal-form-fake-checkbox {
+  border-color: var(--form-checkbox-accent-bgcl);
 }
