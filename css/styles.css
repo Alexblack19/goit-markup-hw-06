@@ -842,8 +842,9 @@ button {
 }
 
 .modal-form-input-desc,
-.modal-form-input {
-  display: flex;
+.modal-form-input,
+.modal-form-message { 
+  display: block; 
   width: 100%;
 }
 
@@ -858,15 +859,32 @@ button {
   color: var(--form-input-desc-txt-cl);
 }
 
-.modal-form-input {
-  padding: 8px 16px 8px 38px;  
-
-  height: 40px;
-
+.modal-form-input,
+.modal-form-message {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
 }
 
+.modal-form-input {  
+  padding: 8px 16px 8px 38px;  
+
+  height: 40px;
+}
+
+.modal-form-message {
+  padding: 8px 16px;
+
+  min-height: 120px;
+}
+
+.modal-form-group .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 18px;
+  height: 24px;
+}
 
 
 
