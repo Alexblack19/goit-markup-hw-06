@@ -65,6 +65,10 @@
   /** Modal window form  */
   --form-primary-txt-cl: #8E8F99;
   --form-secondary-txt-cl: #4D5AE5;
+  --form-input-border-cl: rgba(46, 47, 66, 0.4);
+  --form-focus-border-cl: #4D5AE5;
+  --form-icon-fil:#2E2F42;
+  --form-focus-icon-fill: #4D5AE5;
 
   /** Portfolio cards overlay */
   --cards-overlay-bgcl: #4D5AE5;
@@ -858,23 +862,19 @@ button {
 
 .modal-form-input,
 .modal-form-comment {
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid var(--form-input-border-cl);
   border-radius: 4px;
 }
 
 .modal-form-input:focus,
 .modal-form-comment:focus {
-  border: 1px solid #4D5AE5;  
+  outline: none;
+  border: 1px solid var(--form-focus-border-cl);
 }
 
-
-
-
-
-
-
-
-
+.modal-form-input-wrap:focus-within > .icon {
+  fill: var(--form-focus-icon-fill);
+}
 
 .modal-form-input {  
   padding: 8px 16px 8px 38px;  
@@ -912,6 +912,7 @@ button {
 
 .modal-form-input-wrap {
   position: relative;
+  display: block;
 }
 
 .modal-form-group .icon {
@@ -922,6 +923,8 @@ button {
 
   width: 18px;
   height: 24px;
+
+  fill: var(--form-icon-fil);
 }
 
 
