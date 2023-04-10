@@ -73,6 +73,9 @@
   --form-checkbox-border-cl: rgba(46, 47, 66, 0.4);
   --form-checkbox-accent-bgcl: #404BBF;
   --form-icon-fake-checkbox-fill: #F4F4FD;
+  --form-submit-bgcl: #4d5ae5;  
+  --form-accent-submit-bgcl: #404bbf;
+  --form-submit-txt-cl: #ffffff;
 
   /** Portfolio cards overlay */
   --cards-overlay-bgcl: #4D5AE5;
@@ -641,6 +644,10 @@ button {
   fill: currentColor;
 }
 
+/**========== Footer (form) ==========*/
+
+
+
 /**========== Portfolio ==========*/
 
 .portfolio {
@@ -943,17 +950,6 @@ button {
   color: var(--form-secondary-txt-cl);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .modal-form-fake-checkbox {
   display: flex;
   justify-content: center;
@@ -967,6 +963,8 @@ button {
   border: 1px solid var(--form-checkbox-border-cl);
   border-radius: 2px;
   cursor: pointer;  
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-check {
@@ -976,9 +974,10 @@ button {
   fill: currentColor;
 
   opacity: 0;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
-
 .modal-form-check:checked + .modal-form-fake-checkbox {
   background-color: var(--form-checkbox-accent-bgcl);
   border-color: var(--form-checkbox-accent-bgcl);  
@@ -988,6 +987,53 @@ button {
   border-color: var(--form-checkbox-accent-bgcl);
 }
 
-.modal-form-check:checked + .modal-form-fake-checkbox {
+.modal-form-check:checked + .modal-form-fake-checkbox > .icon {
   opacity: 1;
+}
+
+.modal-form-check-group {
+  position: relative;
+  display: block;  
+}
+
+.modal-form-fake-checkbox {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-form-check-desc {
+  display: block;
+  margin-top: 16px;
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+
+.modal-form-submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 56px;
+  min-width: 169px;
+
+  padding: 16px 32px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.04em;
+
+  color: var(--form-submit-txt-cl);
+  background-color: var(--form-submit-bgcl);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.modal-form-submit:is(:hover, :focus) {
+  background-color: var(--form-accent-submit-bgcl);
 }
