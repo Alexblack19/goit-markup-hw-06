@@ -959,9 +959,6 @@ button {
   justify-content: center;
   align-items: center;
 
-
-  /* display: block; */
-
   width: 16px;
   height: 16px;
 
@@ -969,9 +966,7 @@ button {
 
   border: 1px solid var(--form-checkbox-border-cl);
   border-radius: 2px;
-  cursor: pointer;
-
-  transition: color 4250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 4250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 4250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;  
 }
 
 .icon-check {
@@ -981,9 +976,8 @@ button {
   fill: currentColor;
 
   opacity: 0;
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+  
 
 .modal-form-check:checked + .modal-form-fake-checkbox {
   background-color: var(--form-checkbox-accent-bgcl);
@@ -994,6 +988,6 @@ button {
   border-color: var(--form-checkbox-accent-bgcl);
 }
 
-.modal-form-check:checked + .modal-form-fake-checkbox .icon-check {
+.modal-form-check:checked + .modal-form-fake-checkbox {
   opacity: 1;
 }
