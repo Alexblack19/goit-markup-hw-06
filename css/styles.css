@@ -63,7 +63,7 @@
   --modal-button-bgcl: #E7E9FC;
   --modal-button-accent-bgcl: #404BBF;
 
-  /** Modal window form  */
+  /** Form  */
   --form-primary-txt-cl: #8E8F99;
   --form-secondary-txt-cl: #4D5AE5;
   --form-input-border-cl: rgba(46, 47, 66, 0.4);
@@ -77,6 +77,7 @@
   --form-submit-bgcl: #4d5ae5;  
   --form-accent-submit-bgcl: #404bbf;
   --form-submit-txt-cl: #ffffff;
+  --footer-form-border-cl: #ffffff;
 
   /** Portfolio cards overlay */
   --cards-overlay-bgcl: #4D5AE5;
@@ -662,23 +663,25 @@ button {
   color: var(--footer-form-txt-cl);
 }
 
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
 .footer-form-input {
   width: 264px;
   height: 40px;
-  padding: 8px 16px;
-  margin-right: 24px;
+  padding: 8px 16px;  
 
   color: var(--footer-form-txt-cl);
   background-color: transparent;
 
-  border: 1px solid #FFFFFF;
+  border: 1px solid var(--footer-form-border-cl);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
 
-.footer-form-input::placeholder {  
-  font-family: 'Roboto';
-  font-style: normal;
+.footer-form-input::placeholder {    
   font-weight: 400;
   font-size: 12px;
   line-height: calc(24 / 12);
@@ -686,20 +689,42 @@ button {
   color: var(--footer-form-txt-cl);
 }
 
-.footer-form-input
+.footer-form-submit {
+  position: relative;
 
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 24px;
 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  text-align: left;
+  letter-spacing: 0.04em;
 
+  color: var(--footer-form-txt-cl);
+  background-color: var(--form-submit-bgcl);
+  border: none;  
+  border-radius: 4px;
 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.footer-form-submit:is(:hover, :focus) {
+  background-color: var(--form-accent-submit-bgcl);
+}
 
+.icon-subscribe {
+  position: absolute;
+  bottom: 50%;
+  right: 24px;
+  transform: translateY(50%);
+  
+  width: 24px;
+  height: 24px;
 
-
-
-
-
-
-
+  fill: currentColor;
+}
 
 /**========== Portfolio ==========*/
 
