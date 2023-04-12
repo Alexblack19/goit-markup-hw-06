@@ -689,9 +689,24 @@ button {
   color: var(--footer-form-txt-cl);
 }
 
-.footer-form-submit {
-  position: relative;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-form-submit {
+  display: flex;
+  align-items: center;
+  
   min-width: 165px;
   height: 40px;
   padding: 8px 24px;
@@ -715,16 +730,31 @@ button {
 }
 
 .icon-subscribe {
-  position: absolute;
-  bottom: 50%;
-  right: 24px;
-  transform: translateY(50%);
-  
+  margin-left: 16px;
+
   width: 24px;
   height: 24px;
 
   fill: currentColor;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**========== Portfolio ==========*/
 
