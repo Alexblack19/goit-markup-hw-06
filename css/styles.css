@@ -689,20 +689,6 @@ button {
   color: var(--footer-form-txt-cl);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer-form-submit {
   display: flex;
   align-items: center;
@@ -737,24 +723,6 @@ button {
 
   fill: currentColor;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /**========== Portfolio ==========*/
 
