@@ -687,6 +687,7 @@ button {
   font-weight: 400;
   font-size: 12px;
   line-height: calc(24 / 12);
+  letter-spacing: 0.04em;
 
   color: var(--footer-form-txt-cl);
 }
