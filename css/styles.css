@@ -786,7 +786,7 @@ button {
 .portfolio-cards > .item {
   flex-basis: calc((100% - 48px) / 3);
 
-  background-color: var(--cards-bgcl);
+  background-color: var(--cards-bgcl);  
 }
 
 .portfolio-cards .link {
